@@ -1,0 +1,4 @@
+1. Ejecutar en la consola desde agendanode\server el script "scriptMongoDB.js" para insertar 1 usuario	y 1 evento a la base de datos agenda.
+2. Para loguearse ingresar con:
+Usuario: carlos_b@gmail.com 
+Password : 12345 
