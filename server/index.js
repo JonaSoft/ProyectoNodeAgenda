@@ -4,7 +4,7 @@ const http = require('http'),
       bodyParser = require('body-parser'),
       mongoose = require('mongoose');
 
-let rutas = require('./rutas.js');
+let rutas = require('./routers/rutas.js');
 let rutaimagenes = path.join(__dirname,'../') + '/client/img/';
 let rutaestilos = path.join(__dirname,'../') + '/client/css/';
 let rutajs = path.join(__dirname,'../') + '/client/js/';

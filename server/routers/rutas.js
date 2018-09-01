@@ -10,12 +10,12 @@ Router.use(session({
 
 
 let path = require('path');
-const usuarios = require('./modeloUsuario.js');
-const eventos = require('./modeloEvento.js');
+const usuarios = require('../models/modeloUsuario.js');
+const eventos = require('../models/modeloEvento.js');
 
 
 
-let viewsPath = path.join(__dirname,'../') + 'client/';
+let viewsPath = path.join(__dirname,'../','../') + './client/';
 
 Router.get('/', function(req, res) {
   res.sendFile(viewsPath + 'index.html')
@@ -33,9 +33,9 @@ Router.post('/login', function(req, res) {
        if (count==1) {
             req.session.user= correo;
             
-            res.send("Validado");
+            res.send("Validado")
         }else{
-            res.send("No Validado"+ count)            ;
+            res.send("No Validado"+ count)
         }  
     })    
 })
